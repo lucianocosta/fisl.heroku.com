@@ -1,0 +1,55 @@
+/* INFO-BOX */
+
+div.info_box {
+  -moz-border-radius:6px 6px 6px 6px;
+  color:#333333;
+  display:block;
+  margin:20px 0;
+  padding:12px 12px 12px 52px;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+.error {
+  background:url("../img/icons/error.png") no-repeat scroll 10px 50% #FFCCCC;
+  border:1px solid #FF6666;
+}
+
+.download {
+  background:url("../img/icons/download.png") no-repeat scroll 10px 50% #FFFFCC;
+  border:1px solid #CCCC00;
+}
+
+.success {
+  background:url("../img/icons/succes.png") no-repeat scroll 10px 50% #CFFFB2;
+  border:1px solid #00CC33;
+}
+
+.warning {
+  background:url("../img/icons/warning.png") no-repeat scroll 10px 50% #FFCC99;
+  border:1px solid #FF9933;
+}
+
+.info {
+  background:url("../img/icons/info.png") no-repeat scroll 10px 50% #99CCFF;
+  border:1px solid #0066FF;
+}
+
+.forbidden {
+  background:url("../img/icons/forbidden.png") no-repeat scroll 10px 50% #FFCCCC;
+  border:1px solid #FF6666;
+}
+
+.help {
+  background:url("../img/icons/help.png") no-repeat scroll 10px 50% #84DBF1;
+  border:1px solid #0099CC;
+}
+
+.close {
+  background:url("../img/icons/close_box.png") no-repeat scroll left top transparent;
+  float:right;
+  height:9px;
+  margin:6px 0;
+  width:9px;
+}
+

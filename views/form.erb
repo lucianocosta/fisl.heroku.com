@@ -1,0 +1,12 @@
+<form action="" method="post">
+  
+  <table>
+    <tr><td>Nome: </td><td><input type="text" name="app[name]" value="<%= h @app.name %>"/></td></tr>
+    <tr><td>URL: </td><td><input type="text" name="app[url]" value="<%= h @app.url %>"/></td></tr>
+    <tr><td>Descrição: </td><td><textarea name="app[description]"><%= h @app.description %></textarea></td></tr>
+    <tr><td>Autor(es): </td><td><input type="text" name="app[authors]" value="<%= h @app.authors %>"/></td></tr>
+    <tr><td>Senha para edição: </td><td><input type="text" name="app[password]" value=""/></td></tr>
+    <tr><td>&nbsp;</td><td style="text-align:center;"><input type="submit" style="background-color:#F0EBE2;" value="salvar"></td></tr>
+  </table>
+  
+</form>

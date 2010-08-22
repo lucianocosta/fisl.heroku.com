@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang='en-US' xml:lang='en-US' xmlns='http://www.w3.org/1999/xhtml'> 
+<head> 
+  <title>[FISL - 2010] - Apps Relâmpago!</title>
+  <meta charset='utf-8'>
+  <link type="text/css" rel="stylesheet" href="/css/styles.css" media="screen" />
+  <link type="text/css" rel="stylesheet" href="/css/info_box.css" media="screen" />
+  <script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="/js/custom.js"></script>
+</head>
+
+<body>
+
+<div style="float:left; padding-top:10px; margin-bottom:20px;">
+<a href="/" style="text-decoration:none; font-size:30px; border:none;">
+  <img src="/img/fisl-logo.png" />
+</a>
+</div>
+
+<div style="float:left; padding-left:20px; padding-top:70px; font-size:30px;">
+Aplicações criadas durante o FISL 2010
+</div>
+
+<% if @message %>
+  <div class="info_box <%= @message[:type]%>" style="clear:both; display:none;">
+    <span class="close">&nbsp;</span>
+    <%= @message[:text]%>
+  </div>
+<% end %>
+
+<div id="page_content" style="clear:both;">
+  <%= yield %>
+</div>
+
+</body>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17615461-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</html>
+

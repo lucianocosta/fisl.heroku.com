@@ -1,0 +1,62 @@
+*{
+  font-size:14px;
+  font-family:verdana,arial,tahoma;
+  border:0;
+}
+
+body{
+  background-image: url(/img/background.jpg);
+  
+}
+
+a, a:visited{
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+form table td{
+  color:gray;
+  padding:4px;  
+  border:0px;
+  white-space:nowrap;
+  text-align: right;
+  
+}
+
+input, textarea, select{
+  border: 1px solid silver;
+  padding:3px;
+  width:400px;
+}
+
+
+/* listagem de apps*/
+
+ul li{
+  padding:15px;
+  list-style:none;
+  border-bottom:1px solid silver;
+}
+
+.link_app{
+  font-size:25px;
+  width:300px;
+  text-decoration:none;
+  color: blue;
+}
+
+.link_edit{
+  font-size:10px;
+  width:70px;
+}
+
+.app_description{
+  margin-left:18px;
+  width:450px;
+  font-size:14px;
+  color: gray;
+}
+

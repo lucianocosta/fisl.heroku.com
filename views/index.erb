@@ -1,0 +1,23 @@
+<% if @apps %>
+
+  <ul>
+
+  <% @apps.each do |a| %>
+
+    <li>
+      <a class="link_app" href="<%=a[:url]%>" target="_blank"><%= h a[:name]%></a> 
+      <span class="app_description"><%= h a[:description]%></span>
+      <a class="link_edit" href="/app/<%=a[:id]%>" title="ver/editar" border="0"><img src="/img/icons/form.gif" border="0"/></a>
+    </li> 
+
+  <% end %>
+
+  </ul>
+
+  <br/>
+  
+  <font style="color:gray; margin-left:45px;">
+  Também fez uma app durante o FISL e ela não aparece aqui? <a href="/app/new">Adicione agora!</a>
+  </font>
+
+<% end %>
